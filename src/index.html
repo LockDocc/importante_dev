@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carta da Lua 🌙</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Fundo de estrelas -->
+  <div class="stars" aria-hidden="true"></div>
+  <div class="stars2" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <section class="card">
+      <h1 class="title">Toque a lua e escute o céu</h1>
+      <!-- Frase que some ao abrir -->
+      <p id="introTexto" class="intro">
+        Há coisas que só a noite consegue dizer…
+      </p>
+
+      <!-- Botão-lua -->
+      <button id="btnLua" class="btn-lua" onclick="toggleCarta()">
+        <span class="lua" aria-hidden="true">🌙</span>
+        <span class="texto-btn">Abrir carta</span>
+      </button>
+
+      <!-- Carta -->
+      <div id="carta" class="carta" aria-live="polite">
+        <p id="textoCarta" class="texto"></p>
+        <span id="cursor" class="cursor" aria-hidden="true">|</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
